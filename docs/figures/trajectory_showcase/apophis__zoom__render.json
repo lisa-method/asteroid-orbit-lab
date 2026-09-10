@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256" : {
+    "frame_000.png" : "49ca776a733ae8737a411d0473d702785c8218afb3195308b8a67e8d04ef50d1",
+    "frame_end.png" : "951e2ae7e965bdaff898629a7f3a5aa7bc9462014eee0c1c84731732fa406e92",
+    "frame_mid.png" : "06987662069fdd95b7647dece33450f19d071b259de635d26cba03479a713ae2"
+  },
+  "checkpoints" : {
+    "0" : "frame_000.png",
+    "60" : "frame_mid.png",
+    "119" : "frame_end.png"
+  },
+  "delay_seconds" : 0.059999999999999998,
+  "frame_count" : 120,
+  "gif" : "trajectory_animation.gif",
+  "gif_sha256" : "f5b3ae4556e81061d6090c36ee23a4e04c40371029a9a2292333663aa9c2fc0a",
+  "height" : 800,
+  "loop_count" : 0,
+  "renderer_binary_sha256" : "8b60f263c1d0878d57c5ce3f750114d359bec50cfdc1bc013f4a3f75ffb0f884",
+  "scene_file" : "zoom.json",
+  "scene_sha256" : "93a6ef83da4d943b0465780a2ae7be2b6a13a67b1e66a9a4514238133f7752de",
+  "schema_version" : 2,
+  "width" : 1280
+}

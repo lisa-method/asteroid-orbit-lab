@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "source": "apophis_encounter_closure",
+  "object_id": "99942",
+  "scenes": {
+    "overview": {
+      "frames": 120,
+      "gain": 1.0,
+      "first_day": 0.0,
+      "last_day": 365.0,
+      "maximum_displayed_true_error_km": 2.55213743168636,
+      "scene_sha256": "85a668c25750400efa849df711134129968403a15de848b8fb6947592c026e46"
+    },
+    "encounter": {
+      "frames": 120,
+      "gain": 1.0,
+      "first_day": 102.0,
+      "last_day": 103.5,
+      "maximum_displayed_true_error_km": 0.008871588131425337,
+      "scene_sha256": "fb1430173c408fb885fac0d429cfafaa0c1fc1bc71f53a748c4626afa70ab625"
+    },
+    "zoom": {
+      "frames": 120,
+      "gain": 10000000.0,
+      "first_day": 102.0,
+      "last_day": 103.5,
+      "maximum_displayed_true_error_km": 0.008871588131425337,
+      "scene_sha256": "93a6ef83da4d943b0465780a2ae7be2b6a13a67b1e66a9a4514238133f7752de"
+    },
+    "divergence": {
+      "frames": 91,
+      "gain": 10000000.0,
+      "first_day": 275.0,
+      "last_day": 365.0,
+      "maximum_displayed_true_error_km": 2.55213743168636,
+      "scene_sha256": "ec4a6284aaaeadbcf8681b2a88b6d53705866f7bd3cf3c05e1e1b7749d8cbecc"
+    }
+  },
+  "source_files_checked": 36,
+  "audit_sha256": "dc87f14545e51b532ef45f51576c8e24633783c9c10ed4fdc15d118cde74a3ac",
+  "verifier_sha256": "7413c8c590782ae00d8452f390156ee35a7a141cbb1ee53d8c0b54db11837098",
+  "scope": "presentation audit; no new propagation or validation score"
+}

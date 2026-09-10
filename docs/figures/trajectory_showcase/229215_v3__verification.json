@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "source": "confirmation100",
+  "object_id": "229215",
+  "scenes": {
+    "overview": {
+      "frames": 91,
+      "gain": 1.0,
+      "first_day": 0.0,
+      "last_day": 90.0,
+      "maximum_displayed_true_error_km": 1.2650503003400506,
+      "scene_sha256": "b74c0d831b696a0ca6dce49cd5aa6762a1e4a3073ec27543f54ba4ee5df82682"
+    },
+    "zoom": {
+      "frames": 91,
+      "gain": 10000000.0,
+      "first_day": 0.0,
+      "last_day": 90.0,
+      "maximum_displayed_true_error_km": 1.2650503003400506,
+      "scene_sha256": "6d6627fb930e84a925046d0556024a54ffb7dc7e1c7b349544f90ab6311be5d4"
+    }
+  },
+  "source_files_checked": 5,
+  "audit_sha256": "abb21adef2f62e4067eb6602ab7c773675253a4ac0656c77b2957b7117244478",
+  "verifier_sha256": "7413c8c590782ae00d8452f390156ee35a7a141cbb1ee53d8c0b54db11837098",
+  "scope": "presentation audit; no new propagation or validation score"
+}

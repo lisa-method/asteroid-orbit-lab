@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256" : {
+    "frame_000.png" : "30f2951379aa896f90944a01196e502c8c20d9f0764d02733bd8b078af5ebe23",
+    "frame_end.png" : "0a6f0e78abe2dc1cf1eb55d29fff91a35072edbac1c7d25074e418ab55c2c532",
+    "frame_mid.png" : "25dd3d9033ba485e7ccdf74e8b68ff82d81b76fb188d081a2ad93c6787926f40"
+  },
+  "checkpoints" : {
+    "0" : "frame_000.png",
+    "60" : "frame_mid.png",
+    "119" : "frame_end.png"
+  },
+  "delay_seconds" : 0.059999999999999998,
+  "frame_count" : 120,
+  "gif" : "trajectory_animation.gif",
+  "gif_sha256" : "8fea10a859eca532ab2170cc819d2f4193582d00be4d2fa6a4966f5eb6a7edd7",
+  "height" : 800,
+  "loop_count" : 0,
+  "renderer_binary_sha256" : "8b60f263c1d0878d57c5ce3f750114d359bec50cfdc1bc013f4a3f75ffb0f884",
+  "scene_file" : "overview.json",
+  "scene_sha256" : "85a668c25750400efa849df711134129968403a15de848b8fb6947592c026e46",
+  "schema_version" : 2,
+  "width" : 1280
+}

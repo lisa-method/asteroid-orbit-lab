@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "source": "confirmation100",
+  "object_id": "2001_AV43",
+  "scenes": {
+    "overview": {
+      "frames": 120,
+      "gain": 1.0,
+      "first_day": 0.0,
+      "last_day": 365.0,
+      "maximum_displayed_true_error_km": 0.03394652014864546,
+      "scene_sha256": "94da1343c70943419c38d7cba9f53930dedff33d1b9dd4a66863dcd60a2c2b3e"
+    },
+    "zoom": {
+      "frames": 120,
+      "gain": 100000000.0,
+      "first_day": 28.0,
+      "last_day": 32.0,
+      "maximum_displayed_true_error_km": 0.001950421681984222,
+      "scene_sha256": "3db1460c6b5dc9da4977a477eafd61bb0534660efa9727f501f9bc7e38f37826"
+    },
+    "divergence": {
+      "frames": 91,
+      "gain": 1000000000.0,
+      "first_day": 275.0,
+      "last_day": 365.0,
+      "maximum_displayed_true_error_km": 0.03394652014864546,
+      "scene_sha256": "b653f680585131d8b1844b06558c9bd17deed9e483ed08e69f9899dbfc533327"
+    }
+  },
+  "source_files_checked": 6,
+  "audit_sha256": "3ad88b2e6fd6f82a20089ef0701dfe4b8b9652ad72123f9b5382c8750b951727",
+  "verifier_sha256": "7413c8c590782ae00d8452f390156ee35a7a141cbb1ee53d8c0b54db11837098",
+  "scope": "presentation audit; no new propagation or validation score"
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "source": "confirmation100",
+  "object_id": "2012_SS109",
+  "scenes": {
+    "overview": {
+      "frames": 120,
+      "gain": 1.0,
+      "first_day": 0.0,
+      "last_day": 365.0,
+      "maximum_displayed_true_error_km": 0.35507172663412034,
+      "scene_sha256": "895a0d3275e036b52673475c76985d1b4d515b54a97fbd344c6de35a4c9cb67b"
+    },
+    "zoom": {
+      "frames": 120,
+      "gain": 100000000.0,
+      "first_day": 28.0,
+      "last_day": 32.0,
+      "maximum_displayed_true_error_km": 0.0036419322655098117,
+      "scene_sha256": "c6b15f2268489fd65d8907e3163d9b1218c55eda3e8022abba8b9f61b88947b6"
+    },
+    "divergence": {
+      "frames": 91,
+      "gain": 10000000.0,
+      "first_day": 275.0,
+      "last_day": 365.0,
+      "maximum_displayed_true_error_km": 0.35507172663412034,
+      "scene_sha256": "ce208dd1925843a8b7da86859a2970314ca6be50fa1247c9118dd718c4bbb6ef"
+    }
+  },
+  "source_files_checked": 6,
+  "audit_sha256": "0d24b267897d56682c152625dfe644b284ab779f5283e2bdc48c32f3c2979c14",
+  "verifier_sha256": "7413c8c590782ae00d8452f390156ee35a7a141cbb1ee53d8c0b54db11837098",
+  "scope": "presentation audit; no new propagation or validation score"
+}
