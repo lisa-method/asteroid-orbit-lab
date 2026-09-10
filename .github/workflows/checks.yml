@@ -1,0 +1,27 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          enable-cache: false
+      - name: Synthetic orbit example
+        run: uv run --no-project --python 3.14.7 python examples/orbit_demo.py
+      - name: Unit tests without ephemeris downloads
+        run: uv run --no-project --python 3.14.7 python -B scripts/run_portable_tests.py
+      - name: Documentation and media integrity
+        run: uv run --no-project --python 3.14.7 python scripts/check_publication.py
