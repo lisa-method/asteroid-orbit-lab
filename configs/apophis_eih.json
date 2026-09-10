@@ -1,0 +1,26 @@
+{
+  "contract":"docs/APOPHIS_EIH_CONTRACT.md",
+  "output_directory":"outputs/apophis_eih",
+  "input_config":"configs/apophis_eih_inputs.json",
+  "previous_freeze":"outputs/apophis_gravity_conventions/freeze.json",
+  "previous_matrix":"outputs/apophis_gravity_conventions/matrix.json",
+  "earth_pole":"fixed_j2000",
+  "pluto_mu_km3_s2":975.5,
+  "arms":[
+    {"id":"baseline","pluto":false,"gr":"schwarzschild","solar_j2":false},
+    {"id":"pluto","pluto":true,"gr":"schwarzschild","solar_j2":false},
+    {"id":"pn_sun","pluto":true,"gr":"eih_sun","solar_j2":false},
+    {"id":"pn_all","pluto":true,"gr":"eih_all","solar_j2":false},
+    {"id":"pn_sun_solar_j2","pluto":true,"gr":"eih_sun","solar_j2":true},
+    {"id":"pn_all_solar_j2","pluto":true,"gr":"eih_all","solar_j2":true}
+  ],
+  "solver_settings":[
+    {"label":"extreme","solver":"dopri54","rtol":1e-13,"atol_position":1e-15,"atol_velocity":1e-16},
+    {"label":"ultra","solver":"dopri54","rtol":1e-14,"atol_position":1e-16,"atol_velocity":1e-17},
+    {"label":"rk4_fine","solver":"rk4","scale":0.125}
+  ],
+  "max_dp_step_days":0.25,
+  "rk4_default_step_days":0.0625,
+  "cross_solver_budget_m":1.0,
+  "diagnostic_days":[0,30,60,90,98,100,101,102,103,104,105,110,120,180,365]
+}

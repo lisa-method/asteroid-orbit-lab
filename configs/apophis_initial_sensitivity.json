@@ -1,0 +1,17 @@
+{
+  "contract": "docs/APOPHIS_INITIAL_SENSITIVITY_CONTRACT.md",
+  "output_directory": "outputs/apophis_initial_sensitivity",
+  "parent_matrix": "outputs/apophis_spk_audit/matrix.json",
+  "parent_freeze": "outputs/apophis_spk_audit/freeze.json",
+  "parent_verification": "outputs/apophis_spk_audit/verification.json",
+  "baseline_key": "all_direct__ultra",
+  "ephemeris_arm": "all_direct",
+  "solver_setting": "ultra",
+  "position_amplitudes_m": [1.0, 10.0],
+  "velocity_amplitudes_m_s": [0.000001, 0.00001],
+  "axes": [0, 1, 2],
+  "signs": [-1, 1],
+  "expected_new_propagations": 24,
+  "derivative_relative_consistency_budget": 0.01,
+  "diagnostic_days": [0, 30, 60, 90, 98, 100, 101, 102, 103, 104, 105, 110, 120, 180, 365]
+}

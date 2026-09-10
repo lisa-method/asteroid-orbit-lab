@@ -1,0 +1,9 @@
+{
+  "contract":"docs/APOPHIS_EIH_BARYCENTRIC_CONTRACT.md",
+  "output_directory":"outputs/apophis_eih_barycentric",
+  "previous_freeze":"outputs/apophis_eih/freeze.json",
+  "previous_matrix":"outputs/apophis_eih/matrix.json",
+  "arms":["pn_sun","pn_all","pn_sun_solar_j2","pn_all_solar_j2"],
+  "settings":["extreme","ultra","rk4_fine"],
+  "cross_solver_budget_m":1.0
+}

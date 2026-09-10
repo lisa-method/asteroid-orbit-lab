@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "selection_scope": "Post-hoc illustrations selected after opening confirmation100 results; not a new validation score or a new forecast",
+  "cases": [
+    {
+      "directory": "apophis",
+      "source": "apophis",
+      "object_id": "99942",
+      "horizon_days": 365,
+      "purpose": "Inspected stress case with an unresolved 2.552 km annual residual; separate diagnostic backend"
+    },
+    {
+      "directory": "2001_AV43",
+      "source": "confirmation",
+      "object_id": "2001_AV43",
+      "method": "physics_v4",
+      "horizon_days": 365,
+      "tolerance_km": 1,
+      "purpose": "New Earth encounter with the general strong-scattering warning"
+    },
+    {
+      "directory": "229215_v4",
+      "source": "confirmation",
+      "object_id": "229215",
+      "method": "physics_v4",
+      "horizon_days": 90,
+      "tolerance_km": 1,
+      "purpose": "New outer-belt case: SB16 is required for the requested accuracy"
+    },
+    {
+      "directory": "229215_v3",
+      "source": "confirmation",
+      "object_id": "229215",
+      "method": "tree_v3",
+      "horizon_days": 90,
+      "tolerance_km": 1,
+      "purpose": "Same initial state and horizon: the older selector misses the tolerance"
+    },
+    {
+      "directory": "310442_100m",
+      "source": "confirmation",
+      "object_id": "310442",
+      "method": "physics_v4",
+      "horizon_days": 365,
+      "tolerance_km": 0.1,
+      "purpose": "Venus case: warned fallback fails 100 m although P+GR is eligible"
+    },
+    {
+      "directory": "893065_100m",
+      "source": "confirmation",
+      "object_id": "893065",
+      "method": "physics_v4",
+      "horizon_days": 365,
+      "tolerance_km": 0.1,
+      "purpose": "NG and low-perihelion case with no eligible 100 m annual candidate"
+    },
+    {
+      "directory": "2012_SS109",
+      "source": "confirmation",
+      "object_id": "2012_SS109",
+      "method": "physics_v4",
+      "horizon_days": 365,
+      "tolerance_km": 1,
+      "purpose": "New Jupiter-encounter stratum and a catalogued Centaur orbit"
+    }
+  ]
+}

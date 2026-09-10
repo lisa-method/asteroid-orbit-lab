@@ -1,0 +1,20 @@
+{
+  "contract": "docs/PRECISE_PROPAGATION_CONTRACT.md",
+  "output_directory": "outputs/precise_propagation",
+  "previous_matrix": "outputs/apophis_shape_weak_force/matrix.json",
+  "previous_freeze": "outputs/apophis_shape_weak_force/freeze.json",
+  "old_baseline_modes": {
+    "legacy": [0.5, 0.25, 0.125],
+    "endpoint": [0.5, 0.25, 0.125],
+    "compensated": [0.5, 0.25, 0.125, 0.0625]
+  },
+  "additional_compensated": [
+    {"initial_source": "old", "arm": "j3j4", "scales": [0.25, 0.125]},
+    {"initial_source": "annual_hourly", "arm": "baseline", "scales": [0.25, 0.125]},
+    {"initial_source": "annual_hourly", "arm": "j3j4", "scales": [0.25, 0.125]}
+  ],
+  "dp_initial_sources": ["old", "annual_hourly"],
+  "dp_arms": ["baseline", "j3j4"],
+  "dp_labels": ["tighter", "extreme"],
+  "empirical_agreement_m": 1.0
+}

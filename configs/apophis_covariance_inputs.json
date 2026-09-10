@@ -1,0 +1,12 @@
+{
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=99942&cov=vec&full-prec=1&cd-epoch=1",
+  "raw": "data/raw/apophis_covariance/sbdb_cov_vec.json",
+  "manifest": "data/checksums/apophis_covariance_manifest.json",
+  "design": "data/processed/apophis_covariance/download_freeze.json",
+  "max_bytes": 1048576,
+  "object_designation": "99942",
+  "expected_api_version": "1.3",
+  "expected_parent_solution": "220",
+  "forecast_start_tdb": "2029-01-01T00:00:00",
+  "scope": "Covariance availability and epoch/solution compatibility audit; no assumed match"
+}

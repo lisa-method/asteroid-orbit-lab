@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "purpose": "Exploratory model sufficiency on the inspected six-object regression set; not a final forecast test",
+  "data_config": "configs/eda_pilot_6.json",
+  "force_config": "configs/b3plus_pilot_6.json",
+  "event_config": "configs/eda_apophis_2029_refinement.json",
+  "start_dates": ["2029-01-01"],
+  "coverage_note": "First bounded matrix: all six objects, one predeclared start crossing Apophis encounter, five horizons; expansion to 2026-2028 is a separate experiment",
+  "horizons_days": [7, 30, 90, 180, 365],
+  "exploratory_position_tolerances_km": [0.1, 1.0, 10.0],
+  "numerical_budget_fraction": 0.1,
+  "default_step_days": 0.0625,
+  "step_scale": 0.5,
+  "sensitivity_scale_factor": 0.5,
+  "timing_repeats": 3,
+  "models": [
+    {"model_id": "B2", "planets": false, "solar_gr": false, "small_bodies": false, "earth_j2": false},
+    {"model_id": "B3", "planets": true, "solar_gr": false, "small_bodies": false, "earth_j2": false},
+    {"model_id": "B3+GR", "planets": true, "solar_gr": true, "small_bodies": false, "earth_j2": false},
+    {"model_id": "B3+GR+SB16", "planets": true, "solar_gr": true, "small_bodies": true, "earth_j2": false},
+    {"model_id": "B3+GR+SB16+J2", "planets": true, "solar_gr": true, "small_bodies": true, "earth_j2": true}
+  ],
+  "earth_j2": {
+    "j2": 0.00108262545,
+    "reference_radius_km": 6378.1366,
+    "pole_model": "iau",
+    "constant_source": "Stored Horizons Earth header (IERS 2010 J2); JPL planetary physical parameters equatorial radius",
+    "radius_source_url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+    "pole_source_url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/pck.html",
+    "limitation": "Mean-pole text-PCK approximation; no nutation or EOP and not exact Horizons force/rotation matching"
+  },
+  "protocol": {
+    "split": "engineering_regression",
+    "reference": "Stored immutable Horizons snapshot; conditional propagation from a supplied initial state",
+    "primary_error": "max sampled position error; daily backbone with the predeclared Apophis refined window when present",
+    "fitted_non_gravitational_parameters": "excluded from primary candidates; retained only in separate J2 teacher-matching audit",
+    "timing": "Warm resident ephemerides; cumulative prefix runtime through each horizon, including force construction, integration, interpolation and output instrumentation; shared loading reported separately",
+    "oracle": "Offline label-aware lower-cost reference within candidates, not a deployable selector; no formal error guarantee",
+    "numerical_quality": "Observed production-versus-halved-step trajectory difference, not a rigorous error bound",
+    "encounter_grid": "Fixed existing Apophis window is a benchmark output schedule, not an inferred forecast-time encounter feature"
+  },
+  "artifacts": {
+    "output_directory": "outputs/model_sufficiency/pilot6",
+    "report": "docs/MODEL_SUFFICIENCY_PILOT6_REPORT.md",
+    "j2_report": "docs/EARTH_J2_PILOT6_REPORT.md"
+  }
+}

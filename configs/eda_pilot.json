@@ -1,0 +1,48 @@
+{
+    "schema_version": 1,
+    "purpose": "Exploratory technical pilot; not the final train/validation/test sample",
+    "time_range": {
+        "start": "2020-01-01",
+        "stop": "2030-12-31",
+        "step": "1 d",
+        "time_scale": "TDB"
+    },
+    "coordinates": {
+        "center": "500@10",
+        "center_label": "Sun body center",
+        "reference_system": "ICRF",
+        "reference_plane": "FRAME",
+        "units": "AU-D",
+        "vector_corrections": "NONE",
+        "calendar": "GREGORIAN"
+    },
+    "asteroids": [
+        {"id": "838", "name": "Seraphina", "role": "quiet main-belt control"},
+        {"id": "433", "name": "Eros", "role": "Amor near-Earth asteroid"},
+        {"id": "1862", "name": "Apollo", "role": "Apollo-class near-Earth asteroid"},
+        {"id": "3200", "name": "Phaethon", "role": "high-eccentricity potentially hazardous asteroid"},
+        {"id": "99942", "name": "Apophis", "role": "strong Earth-encounter stress case"}
+    ],
+    "perturbers": [
+        {"id": "199", "name": "Mercury", "mu_km3_s2": 22031.868551},
+        {"id": "299", "name": "Venus", "mu_km3_s2": 324858.592000},
+        {"id": "399", "name": "Earth", "mu_km3_s2": 398600.435507},
+        {"id": "301", "name": "Moon", "mu_km3_s2": 4902.800118},
+        {"id": "4", "name": "Mars system", "mu_km3_s2": 42828.375816},
+        {"id": "5", "name": "Jupiter system", "mu_km3_s2": 126712764.100000},
+        {"id": "6", "name": "Saturn system", "mu_km3_s2": 37940584.841800},
+        {"id": "7", "name": "Uranus system", "mu_km3_s2": 5794556.400000},
+        {"id": "8", "name": "Neptune system", "mu_km3_s2": 6836527.100580}
+    ],
+    "constants": {
+        "au_km": 149597870.700,
+        "day_s": 86400.0,
+        "mu_sun_km3_s2": 132712440041.279419
+    },
+    "provenance": {
+        "horizons_api": "https://ssd.jpl.nasa.gov/api/horizons.api",
+        "sbdb_api": "https://ssd-api.jpl.nasa.gov/sbdb.api",
+        "astrodynamic_parameters": "https://ssd.jpl.nasa.gov/astro_par.html",
+        "retrieval_mode": "anonymous read-only HTTPS"
+    }
+}

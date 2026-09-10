@@ -1,0 +1,9 @@
+{
+  "raw": "data/raw/apophis_covariance/horizons_epoch.json",
+  "manifest": "data/checksums/covariance_epoch_manifest.json",
+  "design": "data/processed/apophis_covariance/epoch_download_freeze.json",
+  "time_range": {"start": "2021-01-01", "stop": "2021-01-02", "step": "1 d", "time_scale": "TDB"},
+  "position_gate_km": 0.01,
+  "velocity_gate_m_s": 0.000001,
+  "scope": "Two old-epoch nominal vectors to verify SBDB element/frame conversion only"
+}

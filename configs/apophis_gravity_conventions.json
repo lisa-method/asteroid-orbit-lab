@@ -1,0 +1,25 @@
+{
+  "contract": "docs/APOPHIS_GRAVITY_CONVENTIONS_CONTRACT.md",
+  "output_directory": "outputs/apophis_gravity_conventions",
+  "header": "data/raw/gravity_conventions/header.441",
+  "manifest": "data/checksums/gravity_conventions_manifest.json",
+  "previous_freeze": "outputs/precise_dp/freeze.json",
+  "initial_source": "annual_hourly",
+  "arms": [
+    {"id": "baseline", "earth_pole": "iau", "solar_j2": false},
+    {"id": "fixed_pole", "earth_pole": "fixed_j2000", "solar_j2": false},
+    {"id": "solar_j2", "earth_pole": "iau", "solar_j2": true},
+    {"id": "fixed_pole_solar_j2", "earth_pole": "fixed_j2000", "solar_j2": true}
+  ],
+  "solar_pole_ra_deg": 286.13,
+  "solar_pole_dec_deg": 63.87,
+  "solver_settings": [
+    {"label": "extreme", "solver": "dopri54", "rtol": 1e-13, "atol_position": 1e-15, "atol_velocity": 1e-16},
+    {"label": "ultra", "solver": "dopri54", "rtol": 1e-14, "atol_position": 1e-16, "atol_velocity": 1e-17},
+    {"label": "rk4_fine", "solver": "rk4", "scale": 0.125}
+  ],
+  "max_dp_step_days": 0.25,
+  "rk4_default_step_days": 0.0625,
+  "cross_solver_budget_m": 1.0,
+  "diagnostic_days": [0, 30, 60, 90, 98, 100, 101, 102, 103, 104, 105, 110, 120, 180, 365]
+}

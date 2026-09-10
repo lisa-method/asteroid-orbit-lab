@@ -1,0 +1,15 @@
+{
+    "schema_version": 1,
+    "purpose": "Empirical numerical audit of fixed-step B2 RK4 versus solar-distance adaptive stepping on the six-object engineering pilot",
+    "data_config": "configs/eda_pilot_6.json",
+    "baseline_results": "outputs/baselines/pilot6_results.json",
+    "max_horizon_days": 365,
+    "fixed_step_days": 0.0625,
+    "fine_fixed_step_days": 0.03125,
+    "variable_scale_factors": [1.0, 0.5, 0.25],
+    "provisional_position_budget_km": 0.01,
+    "artifacts": {
+        "output_json": "outputs/numerical_audit/pilot6_results.json",
+        "report": "outputs/numerical_audit/pilot6_report.md"
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded numerical and ephemeris provenance audit of the frozen Apophis 2029 teacher branch; not an operational forecast test",
+  "data_config": "configs/eda_pilot_6.json",
+  "force_config": "configs/b3plus_pilot_6.json",
+  "event_config": "configs/eda_apophis_2029_refinement.json",
+  "object_id": "99942",
+  "start_date": "2029-01-01",
+  "annual_horizon_days": 365,
+  "force_branch": "baseGR+SB16+NG+J2iau",
+  "j2_pole_model": "iau",
+  "earth_j2": {"j2": 0.00108262545, "reference_radius_km": 6378.1366},
+  "old_ephemeris": "data/raw/horizons/body_*.json plus stored apophis_earth_2029_* refinement for Earth/Moon",
+  "hourly_ephemeris": "data/raw/development30/planets/body_*.json for nine configured planets",
+  "teacher_asteroid": "data/raw/horizons/asteroid_99942.json plus stored refined Apophis rows",
+  "ng_gate": "nominal header parameters are retained as a teacher-matching branch; availability is reported from ng_inputs_v2 and is not inferred from osculating epoch or solution date",
+  "rk4_step_scales": [0.5, 0.25, 0.125],
+  "dopri54_tolerances": [
+    {"label": "loose", "rtol": 1e-8, "atol_position": 1e-12, "atol_velocity": 1e-12},
+    {"label": "medium", "rtol": 1e-9, "atol_position": 1e-13, "atol_velocity": 1e-13},
+    {"label": "tight", "rtol": 1e-10, "atol_position": 1e-14, "atol_velocity": 1e-14},
+    {"label": "tighter", "rtol": 1e-12, "atol_position": 1e-14, "atol_velocity": 1e-15},
+    {"label": "extreme", "rtol": 1e-13, "atol_position": 1e-15, "atol_velocity": 1e-16}
+  ],
+  "dopri54_max_step_days": 0.25,
+  "protocol": {
+    "reference": "immutable old Apophis daily series with the stored 5-minute Earth/Moon/Apophis rows merged only inside the 36-hour window",
+    "evaluation": "all solver outputs are sampled on the same old daily-plus-refined TDB grid; accepted integration endpoints are retained separately",
+    "axis_a": "RK4 step scales versus independent Dormand-Prince 5(4) tolerances with identical force callback and old merged ephemerides",
+    "axis_b": "old merged daily/refined ephemerides versus development30 hourly ephemerides for all nine configured planets with identical nominal NG/J2 force branch; RK4 scales 0.5/0.25 and DP tight/tighter are compared",
+    "no_future_inputs": "the teacher state is used only for audit errors; no future asteroid state or reference-derived feature enters force evaluation",
+    "interpretation": "solver agreement bounds numerical sensitivity; source shifts bound ephemeris/interpolation sensitivity; neither identifies omitted physics",
+    "checkpoint_policy": "completed case checkpoints are atomic and reused only when config and source fingerprints match"
+  },
+  "artifacts": {
+    "output_directory": "outputs/apophis_solver_audit",
+    "report": "docs/APOPHIS_SOLVER_AUDIT_REPORT.md"
+  }
+}

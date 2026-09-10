@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "purpose": "Restricted N-body B3 engineering baseline on the six-object pilot",
+    "data_config": "configs/eda_pilot_6.json",
+    "baseline_results": "outputs/baselines/pilot6_results.json",
+    "event_config": "configs/eda_apophis_2029_refinement.json",
+    "default_step_days": 0.0625,
+    "sensitivity_scale_factor": 0.5,
+    "sensitivity_cases": [
+        {"object_id": "3200", "start_date": "2028-01-01", "horizon_days": 365},
+        {"object_id": "99942", "start_date": "2029-01-01", "horizon_days": 365}
+    ],
+    "artifacts": {
+        "output_json": "outputs/baselines/pilot6_nbody_results.json",
+        "report": "docs/NBODY_PILOT6_REPORT.md"
+    }
+}

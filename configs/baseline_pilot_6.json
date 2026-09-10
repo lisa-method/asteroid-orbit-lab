@@ -1,0 +1,37 @@
+{
+    "schema_version": 1,
+    "purpose": "Engineering B0/B1/B2 rollout and central-law recovery on the six-object pilot",
+    "data_config": "configs/eda_pilot_6.json",
+    "horizons_days": [7, 30, 90, 180, 365],
+    "law_fit_object_ids": ["20", "838", "433"],
+    "law_fit_start_dates": [
+        "2020-01-01",
+        "2021-01-01",
+        "2022-01-01",
+        "2023-01-01",
+        "2024-01-01"
+    ],
+    "evaluation_start_dates": [
+        "2026-01-01",
+        "2027-01-01",
+        "2028-01-01",
+        "2029-01-01"
+    ],
+    "integrator": {
+        "method": "fixed-step RK4",
+        "fit_max_step_days": 0.25,
+        "evaluation_max_step_days": 0.0625,
+        "synthetic_truth_max_step_days": 0.03125
+    },
+    "central_law_fit": {
+        "reference_radius_au": 1.0,
+        "reference_acceleration_bounds_au_d2": [1e-5, 1e-3],
+        "exponent_bounds": [1.0, 3.0],
+        "iterations": 60,
+        "stability_iterations": 50
+    },
+    "artifacts": {
+        "output_json": "outputs/baselines/pilot6_results.json",
+        "report": "docs/BASELINE_PILOT6_REPORT.md"
+    }
+}

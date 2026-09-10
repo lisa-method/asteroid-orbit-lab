@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "experiment": "apophis_moon_venus_v1_1",
+  "baseline_config": "configs/apophis_solver_audit.json",
+  "contract": "docs/APOPHIS_MOON_VENUS_CONTRACT.md",
+  "raw_directory": "data/raw/apophis_moon_venus",
+  "manifest": "data/checksums/apophis_moon_venus_manifest.json",
+  "output_directory": "outputs/apophis_moon_venus/v1_1",
+  "download_windows": [
+    {
+      "id": "399",
+      "name": "Earth",
+      "small_body": false,
+      "start": "2029-04-10 00:00",
+      "stop": "2029-04-18 00:00",
+      "step": "5 m",
+      "rows": 2305
+    },
+    {
+      "id": "301",
+      "name": "Moon",
+      "small_body": false,
+      "start": "2029-04-10 00:00",
+      "stop": "2029-04-18 00:00",
+      "step": "5 m",
+      "rows": 2305
+    },
+    {
+      "id": "99942",
+      "name": "Apophis",
+      "small_body": true,
+      "start": "2029-04-10 00:00",
+      "stop": "2029-04-18 00:00",
+      "step": "5 m",
+      "rows": 2305
+    },
+    {
+      "id": "299",
+      "name": "Venus",
+      "small_body": false,
+      "start": "2028-12-31 00:00",
+      "stop": "2030-01-02 00:00",
+      "step": "15 m",
+      "rows": 35233
+    }
+  ],
+  "arms": [
+    {
+      "id": "old",
+      "moon": "old",
+      "earth": "old",
+      "venus": "old"
+    },
+    {
+      "id": "moon5m",
+      "moon": "5m",
+      "earth": "old",
+      "venus": "old"
+    },
+    {
+      "id": "earthmoon5m",
+      "moon": "5m",
+      "earth": "5m",
+      "venus": "old"
+    },
+    {
+      "id": "venus_hourly",
+      "moon": "old",
+      "earth": "old",
+      "venus": "hourly"
+    },
+    {
+      "id": "moon_venus",
+      "moon": "5m",
+      "earth": "old",
+      "venus": "hourly"
+    },
+    {
+      "id": "earthmoon_venus",
+      "moon": "5m",
+      "earth": "5m",
+      "venus": "hourly"
+    },
+    {
+      "id": "earthmoon_venus15m",
+      "moon": "5m",
+      "earth": "5m",
+      "venus": "15m"
+    },
+    {
+      "id": "no_venus",
+      "moon": "5m",
+      "earth": "5m",
+      "venus": "15m",
+      "remove_force": "299"
+    },
+    {
+      "id": "no_moon",
+      "moon": "5m",
+      "earth": "5m",
+      "venus": "15m",
+      "remove_force": "301"
+    }
+  ],
+  "dp_tolerance_labels": [
+    "tight",
+    "tighter"
+  ],
+  "rk4_arms": [
+    "old",
+    "earthmoon_venus15m"
+  ],
+  "rk4_scales": [
+    0.5,
+    0.25
+  ],
+  "baseline_reproduction_absolute_km": 1e-08,
+  "raw_overlap_position_tolerance_km": 1e-05,
+  "raw_overlap_velocity_tolerance_m_s": 1e-06,
+  "trace_amendment": "docs/APOPHIS_MOON_VENUS_TRACE_AMENDMENT.md"
+}

@@ -1,0 +1,22 @@
+{
+  "experiment": "apophis_reference_time_v1",
+  "contract": "docs/APOPHIS_REFERENCE_TIME_CONTRACT.md",
+  "baseline_config": "configs/apophis_solver_audit.json",
+  "source_config": "configs/apophis_moon_venus_v1_1.json",
+  "raw_directory": "data/raw/apophis_reference_time",
+  "manifest": "data/checksums/apophis_reference_time_manifest.json",
+  "output_directory": "outputs/apophis_reference_time",
+  "queries": [
+    {"name":"annual_daily", "start":"2029-01-01 00:00", "stop":"2030-01-01 00:00", "step":"1 d", "rows":366},
+    {"name":"annual_hourly", "start":"2029-01-01 00:00", "stop":"2030-01-01 00:00", "step":"1 h", "rows":8761},
+    {"name":"short_daily", "start":"2029-04-10 00:00", "stop":"2029-04-18 00:00", "step":"1 d", "rows":9},
+    {"name":"short_hourly", "start":"2029-04-10 00:00", "stop":"2029-04-18 00:00", "step":"1 h", "rows":193}
+  ],
+  "relative_modes": ["relative_float_knots", "relative_calendar_knots"],
+  "relative_dp": ["tight","tighter","extreme"],
+  "relative_rk4": [0.5,0.25,0.125],
+  "legacy_dp": ["tight","tighter"],
+  "legacy_rk4": [0.5,0.25],
+  "new_initial_dp": ["tighter","extreme"],
+  "baseline_absolute_tolerance": 1e-8
+}

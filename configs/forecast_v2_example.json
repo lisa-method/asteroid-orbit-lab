@@ -1,0 +1,14 @@
+{
+  "start_jd_tdb": 2462137.5,
+  "position_au": [1.0, 0.0, 0.05],
+  "velocity_au_per_day": [0.0, 0.017, 0.0],
+  "horizon_days": 7,
+  "tolerance_km": 1.0,
+  "coordinates": {
+    "center": "500@10",
+    "reference_system": "ICRF",
+    "reference_plane": "FRAME",
+    "vector_corrections": "NONE",
+    "time_scale": "TDB"
+  }
+}

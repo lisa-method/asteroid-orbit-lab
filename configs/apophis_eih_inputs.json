@@ -1,0 +1,12 @@
+{
+  "raw_directory": "data/raw/apophis_eih",
+  "manifest": "data/checksums/apophis_eih_manifest.json",
+  "design": "data/processed/apophis_eih/download_freeze.json",
+  "time_range": {"start":"2028-12-31 00:00", "stop":"2030-01-02 00:00", "step":"1 h", "time_scale":"TDB"},
+  "coordinates": {"reference_system":"ICRF", "reference_plane":"FRAME", "units":"AU-D", "vector_corrections":"NONE", "calendar":"GREGORIAN"},
+  "provenance": {"horizons_api":"https://ssd.jpl.nasa.gov/api/horizons.api"},
+  "queries": [
+    {"name":"sun_ssb_hourly", "id":"10", "target_name":"Sun", "center":"500@0", "rows":8809},
+    {"name":"pluto_sun_hourly", "id":"9", "target_name":"Pluto system", "center":"500@10", "rows":8809}
+  ]
+}

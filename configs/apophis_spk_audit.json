@@ -1,0 +1,16 @@
+{
+  "contract": "docs/APOPHIS_SPK_AUDIT_CONTRACT.md",
+  "output_directory": "outputs/apophis_spk_audit",
+  "previous_matrix": "outputs/apophis_eih_barycentric/matrix.json",
+  "previous_freeze": "outputs/apophis_eih_barycentric/freeze.json",
+  "input_config": "configs/apophis_spk_inputs.json",
+  "arms": ["baseline", "same_knots", "hourly", "earth_moon_direct", "other_major_direct", "all_direct"],
+  "solver_settings": ["extreme", "ultra", "rk4_fine"],
+  "gr": "eih_sun",
+  "solar_j2": false,
+  "knot_agreement_position_km": 0.00001,
+  "knot_agreement_velocity_m_s": 0.000001,
+  "force_absolute_budget_au_d2": 1e-17,
+  "cross_solver_budget_m": 1.0,
+  "diagnostic_days": [0,30,60,90,98,100,101,102,103,104,105,110,120,180,365]
+}

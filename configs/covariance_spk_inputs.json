@@ -1,0 +1,29 @@
+{
+  "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de441_part-2.bsp",
+  "source_bytes": 1656830976,
+  "source_last_modified": "Tue, 22 Dec 2020 00:15:43 GMT",
+  "target_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    199,
+    299,
+    301,
+    399
+  ],
+  "start_tdb": "2020-12-31T00:00:00",
+  "stop_tdb": "2030-01-02T00:00:00",
+  "origin_tdb": "2021-01-01T00:00:00",
+  "max_download_bytes": 2097152,
+  "raw_directory": "data/raw/covariance_spk",
+  "manifest": "data/checksums/covariance_spk_manifest.json",
+  "design": "data/processed/covariance_spk/download_freeze.json",
+  "index": "data/processed/covariance_spk/index.json"
+}

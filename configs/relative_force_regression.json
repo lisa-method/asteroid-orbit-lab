@@ -1,0 +1,15 @@
+{
+  "contract": "docs/RELATIVE_FORCE_REGRESSION_CONTRACT.md",
+  "output_directory": "outputs/relative_force_regression",
+  "sample_path": "data/processed/development30/sample.json",
+  "base_config": "configs/force_models_v2.json",
+  "solver_config": "configs/apophis_solver_audit.json",
+  "zonal_config": "configs/apophis_shape_weak_force.json",
+  "horizon_days": 365,
+  "arms": ["baseline", "j3j4"],
+  "dp_labels": ["tighter", "extreme"],
+  "rk4_object_ids": ["35396", "170086", "675603", "875508", "1480", "120"],
+  "rk4_step_scale": 0.25,
+  "tolerances_km": [0.1, 1.0, 10.0],
+  "numerical_budget_fraction": 0.1
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "purpose": "Initial-state-only B2 encounter screening; inspected engineering pilot, no learned gate or extra force terms",
+  "data_config": "configs/eda_pilot_6.json",
+  "event_config": "configs/eda_apophis_2029_refinement.json",
+  "main_start_date": "2029-01-01",
+  "horizons_days": [7, 30, 90, 180, 365],
+  "stress_object_id": "99942",
+  "stress_anchor_date": "2029-04-13",
+  "stress_lead_days": [7, 30, 90, 180],
+  "stress_days_after_anchor": 2,
+  "strategies": [
+    {"strategy_id": "daily_nodes", "cadence_days": 1.0, "refine": false},
+    {"strategy_id": "daily_hermite", "cadence_days": 1.0, "refine": true},
+    {"strategy_id": "six_hour_hermite", "cadence_days": 0.25, "refine": true}
+  ],
+  "distance_thresholds_au": [0.001, 0.01, 0.05],
+  "default_step_days": 0.0625,
+  "step_scale": 0.5,
+  "timing_repeats": 3,
+  "protocol": {
+    "split": "engineering_regression",
+    "forecast_inputs": "One initial asteroid state, start epoch, horizon, fixed physics constants and daily planetary ephemerides; no future asteroid states or oracle labels",
+    "forecast_force_model": "B2 solar two-body, solar-distance step guard only; no planetary force, GR, SB16, J2 or nominal NG",
+    "forecast_grid": "Uniform cadence fixed by strategy and final horizon; never uses reference asteroid or known event refinement times",
+    "reference": "Independent piecewise cubic-Hermite minima of the stored asteroid/planet snapshot, with union of their raw nodes and stored Apophis/Earth/Moon refinement; not exact continuous truth",
+    "alerts": "A case/body is positive if its constrained-window minimum separation <= threshold; thresholds are exploratory and fixed before this run, not safety boundaries",
+    "metrics": "Case/body TP/FN/FP/TN, misses, signed distance/time errors and total forecast-plus-screening runtime for each independently executed horizon",
+    "dependence": "Nested horizons and repeated Apophis lead times are correlated; stress cases are reported separately and do not constitute independent encounters",
+    "timing": "Three serial repeats, strategy order rotated; daily planetary ephemerides resident; force setup, propagation, planet interpolation and screening included; data loading and reference evaluation separate",
+    "next_stage": "Use the measured screening limitations before selecting force models; additional small perturbations explicitly deferred"
+  },
+  "artifacts": {
+    "output_directory": "outputs/encounter_screening/pilot6",
+    "report": "docs/ENCOUNTER_SCREENING_PILOT6_REPORT.md"
+  }
+}

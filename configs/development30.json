@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "purpose": "Object-disjoint development benchmark; not final test",
+  "seed": "development30-2026-09-07-v1",
+  "sampling_order": ["Earth", "Venus", "Mars", "Jupiter", "inner_controls", "outer_controls"],
+  "objects_per_stratum": 5,
+  "train_per_stratum": 3,
+  "excluded_object_ids": ["838", "20", "433", "1862", "3200", "99942", "1", "4", "2", "10", "511", "704", "52", "87", "15", "3", "16", "107", "88", "7", "31", "65"],
+  "encounter_lead_days": 30,
+  "control_start_date": "2029-01-01",
+  "horizons_days": [7, 30, 90, 180, 365],
+  "position_tolerances_km": [0.1, 1, 10],
+  "numerical_budget_fraction": 0.1,
+  "data_config": "configs/eda_pilot_6.json",
+  "force_config": "configs/b3plus_pilot_6.json",
+  "sample_path": "data/processed/development30/sample.json",
+  "raw_directory": "data/raw/development30",
+  "output_directory": "outputs/development30",
+  "default_step_days": 0.0625,
+  "step_scale": 0.5,
+  "sensitivity_scale_factor": 0.5,
+  "timing_repeats": 3,
+  "planet_ephemerides": {"start": "2025-12-01", "stop": "2030-12-31", "step": "1 h", "time_scale": "TDB"},
+  "reference_refinement": {"half_window_days": 2, "step": "5 m"},
+  "models": [
+    {"model_id": "B2", "planets": false, "solar_gr": false, "small_bodies": false, "earth_j2": false},
+    {"model_id": "B3", "planets": true, "solar_gr": false, "small_bodies": false, "earth_j2": false},
+    {"model_id": "B3+GR", "planets": true, "solar_gr": true, "small_bodies": false, "earth_j2": false},
+    {"model_id": "B3+GR+SB16", "planets": true, "solar_gr": true, "small_bodies": true, "earth_j2": false}
+  ]
+}

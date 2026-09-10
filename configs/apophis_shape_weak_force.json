@@ -1,0 +1,23 @@
+{
+  "contract":"docs/APOPHIS_SHAPE_WEAK_FORCE_CONTRACT.md",
+  "previous_matrix":"outputs/apophis_reference_time/matrix.json",
+  "previous_freeze":"outputs/apophis_reference_time/freeze.json",
+  "output_directory":"outputs/apophis_shape_weak_force",
+  "earth_zonals":{
+    "reference_radius_km":6378.1363,
+    "mu_km3_s2":398600.4415,
+    "c30_j2000":9.571612e-7,
+    "c40_j2000":5.399659e-7,
+    "c30_rate_per_julian_year":4.9e-12,
+    "c40_rate_per_julian_year":4.7e-12,
+    "source":"https://iers-conventions.obspm.fr/content/chapter6/icc6.pdf",
+    "time_scale_note":"IERS TT-compatible scaling used as an isolated conventional approximation in TDB rollout; not full ITRF/EOP"
+  },
+  "geopotential_arms":["baseline","j3","j4","j3j4"],
+  "initial_sources":["old","annual_hourly"],
+  "dp_labels":["tighter","extreme"],
+  "shape_arms":["shape_xyz","shape_yzx","shape_zxy","shape_sphere"],
+  "shape_initial_source":"annual_hourly",
+  "shape_moments":"data/processed/apophis_shape/moments.json",
+  "shape_manifest":"data/checksums/apophis_shape_manifest.json"
+}

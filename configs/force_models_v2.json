@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "purpose": "Post-hoc development30 regression of composable forces; not fresh validation",
+  "data_config": "configs/eda_pilot_6.json",
+  "force_config": "configs/b3plus_pilot_6.json",
+  "sample_path": "data/processed/development30/sample.json",
+  "raw_directory": "data/raw/development30",
+  "output_directory": "outputs/force_models_v2",
+  "horizons_days": [7, 30, 90, 180, 365],
+  "position_tolerances_km": [0.1, 1, 10],
+  "numerical_budget_fraction": 0.1,
+  "default_step_days": 0.0625,
+  "step_scale": 0.5,
+  "sensitivity_scale_factor": 0.5,
+  "timing_repeats": 3,
+  "fallback_model_id": "V2-P-GR-SB16",
+  "earth_j2": {
+    "j2": 0.00108262545,
+    "reference_radius_km": 6378.1366,
+    "pole_model": "iau",
+    "source": "Unchanged constants from configs/model_sufficiency_pilot6.json; mean-pole approximation"
+  },
+  "models": [
+    {"model_id": "V2-B2", "planets": false, "solar_gr": false, "small_bodies": false, "earth_j2": false, "non_grav": "off"},
+    {"model_id": "V2-P", "planets": true, "solar_gr": false, "small_bodies": false, "earth_j2": true, "non_grav": "if_available"},
+    {"model_id": "V2-P-GR", "planets": true, "solar_gr": true, "small_bodies": false, "earth_j2": true, "non_grav": "if_available"},
+    {"model_id": "V2-P-GR-SB16", "planets": true, "solar_gr": true, "small_bodies": true, "earth_j2": true, "non_grav": "if_available"}
+  ]
+}

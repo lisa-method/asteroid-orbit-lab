@@ -1,0 +1,12 @@
+{
+  "contract": "docs/PRECISE_DP_CONTRACT.md",
+  "output_directory": "outputs/precise_dp",
+  "sources": ["old", "annual_hourly"],
+  "arms": ["baseline", "j3j4"],
+  "tolerances": [
+    {"label": "tighter", "rtol": 1e-12, "atol_position": 1e-14, "atol_velocity": 1e-15},
+    {"label": "extreme", "rtol": 1e-13, "atol_position": 1e-15, "atol_velocity": 1e-16},
+    {"label": "ultra", "rtol": 1e-14, "atol_position": 1e-16, "atol_velocity": 1e-17}
+  ],
+  "max_step_days": 0.25
+}

@@ -1,0 +1,16 @@
+{
+    "schema_version": 1,
+    "event_id": "apophis-earth-2029",
+    "purpose": "Five-minute refinement of the strongest encounter found on the daily EDA grid",
+    "time_range": {
+        "start": "2029-04-13 00:00",
+        "stop": "2029-04-14 12:00",
+        "step": "5 m",
+        "time_scale": "TDB"
+    },
+    "asteroid": {"id": "99942", "name": "Apophis"},
+    "bodies": [
+        {"id": "399", "name": "Earth"},
+        {"id": "301", "name": "Moon"}
+    ]
+}

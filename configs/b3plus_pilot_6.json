@@ -1,0 +1,47 @@
+{
+    "schema_version": 1,
+    "purpose": "B3+ force ablation: solar Schwarzschild term, SB441-N16 massive asteroids, and target-specific nominal non-gravitational terms",
+    "data_config": "configs/eda_pilot_6.json",
+    "baseline_results": "outputs/baselines/pilot6_results.json",
+    "nbody_results": "outputs/baselines/pilot6_nbody_results.json",
+    "event_config": "configs/eda_apophis_2029_refinement.json",
+    "default_step_days": 0.0625,
+    "sensitivity_scale_factor": 0.5,
+    "speed_of_light_km_s": 299792.458,
+    "small_body_ephemeris_directory": "data/raw/horizons_small_perturbers",
+    "small_body_manifest": "data/checksums/b3plus_small_perturbers_manifest.json",
+    "small_body_mass_source": "Yao et al. 2025, A&A 701 A15, Table 1; masses associated with SB441-N16",
+    "small_body_mass_source_url": "https://www.aanda.org/articles/aa/full_html/2025/09/aa54652-25/aa54652-25.html",
+    "small_body_perturbers": [
+        {"id": "1", "name": "Ceres", "gm_over_gm_sun": 4.7191322649e-10},
+        {"id": "4", "name": "Vesta", "gm_over_gm_sun": 1.3031583995e-10},
+        {"id": "2", "name": "Pallas", "gm_over_gm_sun": 1.0296566421e-10},
+        {"id": "10", "name": "Hygiea", "gm_over_gm_sun": 4.2423622874e-11},
+        {"id": "511", "name": "Davida", "gm_over_gm_sun": 2.9396073501e-11},
+        {"id": "704", "name": "Interamnia", "gm_over_gm_sun": 2.1304935564e-11},
+        {"id": "52", "name": "Europa", "gm_over_gm_sun": 2.0204550239e-11},
+        {"id": "87", "name": "Sylvia", "gm_over_gm_sun": 1.6332692462e-11},
+        {"id": "15", "name": "Eunomia", "gm_over_gm_sun": 1.5234015456e-11},
+        {"id": "3", "name": "Juno", "gm_over_gm_sun": 1.4453786252e-11},
+        {"id": "16", "name": "Psyche", "gm_over_gm_sun": 1.1995404353e-11},
+        {"id": "107", "name": "Camilla", "gm_over_gm_sun": 1.0869223879e-11},
+        {"id": "88", "name": "Thisbe", "gm_over_gm_sun": 8.9705163384e-12},
+        {"id": "7", "name": "Iris", "gm_over_gm_sun": 8.5890540853e-12},
+        {"id": "31", "name": "Euphrosyne", "gm_over_gm_sun": 8.1379070706e-12},
+        {"id": "65", "name": "Cybele", "gm_over_gm_sun": 7.0698480859e-12}
+    ],
+    "ablations": [
+        {"model": "B3", "solar_gr": false, "small_bodies": false, "non_gravitational": false},
+        {"model": "B3+GR", "solar_gr": true, "small_bodies": false, "non_gravitational": false},
+        {"model": "B3+GR+SB16", "solar_gr": true, "small_bodies": true, "non_gravitational": false},
+        {"model": "B3+GR+SB16+NG", "solar_gr": true, "small_bodies": true, "non_gravitational": true}
+    ],
+    "sensitivity_cases": [
+        {"object_id": "3200", "start_date": "2028-01-01", "horizon_days": 365},
+        {"object_id": "99942", "start_date": "2029-01-01", "horizon_days": 365}
+    ],
+    "artifacts": {
+        "output_json": "outputs/baselines/pilot6_b3plus_results.json",
+        "report": "docs/B3PLUS_PILOT6_REPORT.md"
+    }
+}
