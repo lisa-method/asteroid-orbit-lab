@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1400 625" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" role="img" aria-labelledby="title-apophis desc-apophis">
+<title id="title-apophis">Apophis J2 and nominal NG audit comparisons</title>
+<desc id="desc-apophis">Three separate logarithmic panels compare local and annual maximum position errors for Apophis.</desc>
+<rect width="100%" height="100%" fill="#fbfcfd"/>
+<text x="35" y="42" font-size="24px" font-weight="700" fill="#20252b" text-anchor="start">Апофис: J2 и nominal-NG ветви</text>
+<text x="35" y="70" font-size="14px" font-weight="400" fill="#45515e" text-anchor="start">Separate windows and force branches; bars show maximum position error only</text>
+<text x="35" y="96" font-size="13px" font-weight="400" fill="#45515e" text-anchor="start">JPL Horizons model-derived teacher; annual J2 changes are not monotonic across branches</text>
+<rect x="55" y="125" width="385" height="390" rx="10" fill="#ffffff" stroke="#d5dce2"/>
+<text x="71" y="158" font-size="18px" font-weight="700" fill="#20252b" text-anchor="start">local 36 h</text>
+<text x="71" y="181" font-size="13px" font-weight="400" fill="#45515e" text-anchor="start">merged; no-NG → J2 IAU</text>
+<line x1="205" x2="420" y1="440" y2="440" stroke="#45515e" stroke-width="1.5"/>
+<line x1="205" x2="205" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="205" x2="205" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="205" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">0.001</text>
+<line x1="258.75" x2="258.75" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="258.75" x2="258.75" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="258.75" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">0.01</text>
+<line x1="312.5" x2="312.5" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="312.5" x2="312.5" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="312.5" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">0.1</text>
+<line x1="366.25" x2="366.25" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="366.25" x2="366.25" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="366.25" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">1</text>
+<line x1="420" x2="420" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="420" x2="420" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="420" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">10</text>
+<text x="312.5" y="493" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">max position error (km), logarithmic scale</text>
+<text x="71" y="296" font-size="15px" font-weight="600" fill="#637083" text-anchor="start">no-NG</text>
+<rect x="205" y="276" width="191.477" height="28" rx="5" fill="#637083"/>
+<text x="71" y="380" font-size="15px" font-weight="600" fill="#14866d" text-anchor="start">+ J2 IAU</text>
+<rect x="205" y="360" width="14.2949" height="28" rx="5" fill="#14866d"/>
+<text x="412" y="296" font-size="14px" font-weight="600" fill="#20252b" text-anchor="end">3.65057 km</text>
+<text x="412" y="380" font-size="14px" font-weight="600" fill="#20252b" text-anchor="end">0.00184481 km</text>
+<rect x="485" y="125" width="385" height="390" rx="10" fill="#ffffff" stroke="#d5dce2"/>
+<text x="501" y="158" font-size="18px" font-weight="700" fill="#20252b" text-anchor="start">annual, no-NG</text>
+<text x="501" y="181" font-size="13px" font-weight="400" fill="#45515e" text-anchor="start">merged; no J2 → J2 IAU</text>
+<line x1="635" x2="850" y1="440" y2="440" stroke="#45515e" stroke-width="1.5"/>
+<line x1="635" x2="635" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="635" x2="635" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="635" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">1</text>
+<line x1="696.833" x2="696.833" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="696.833" x2="696.833" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="696.833" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">10</text>
+<line x1="758.666" x2="758.666" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="758.666" x2="758.666" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="758.666" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">100</text>
+<line x1="820.498" x2="820.498" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="820.498" x2="820.498" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="820.498" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">1000</text>
+<text x="742.5" y="493" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">max position error (km), logarithmic scale</text>
+<text x="501" y="296" font-size="15px" font-weight="600" fill="#637083" text-anchor="start">no J2</text>
+<rect x="635" y="276" width="158.025" height="28" rx="5" fill="#637083"/>
+<text x="501" y="380" font-size="15px" font-weight="600" fill="#b45538" text-anchor="start">+ J2 IAU</text>
+<rect x="635" y="360" width="199.777" height="28" rx="5" fill="#b45538"/>
+<text x="842" y="296" font-size="14px" font-weight="600" fill="#20252b" text-anchor="end">359.482 km</text>
+<text x="842" y="380" font-size="14px" font-weight="600" fill="#20252b" text-anchor="end">1701.89 km</text>
+<rect x="915" y="125" width="385" height="390" rx="10" fill="#ffffff" stroke="#d5dce2"/>
+<text x="931" y="158" font-size="18px" font-weight="700" fill="#20252b" text-anchor="start">annual, nominal-NG</text>
+<text x="931" y="181" font-size="13px" font-weight="400" fill="#45515e" text-anchor="start">merged; no J2 → J2 IAU</text>
+<line x1="1065" x2="1280" y1="440" y2="440" stroke="#45515e" stroke-width="1.5"/>
+<line x1="1065" x2="1065" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="1065" x2="1065" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="1065" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">1</text>
+<line x1="1126.83" x2="1126.83" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="1126.83" x2="1126.83" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="1126.83" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">10</text>
+<line x1="1188.67" x2="1188.67" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="1188.67" x2="1188.67" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="1188.67" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">100</text>
+<line x1="1250.5" x2="1250.5" y1="235" y2="440" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="1250.5" x2="1250.5" y1="440" y2="446" stroke="#45515e" stroke-width="1.5"/>
+<text x="1250.5" y="468" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">1000</text>
+<text x="1172.5" y="493" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">max position error (km), logarithmic scale</text>
+<text x="931" y="296" font-size="15px" font-weight="600" fill="#637083" text-anchor="start">no J2</text>
+<rect x="1065" y="276" width="201.501" height="28" rx="5" fill="#637083"/>
+<text x="931" y="380" font-size="15px" font-weight="600" fill="#14866d" text-anchor="start">+ J2 IAU</text>
+<rect x="1065" y="360" width="69.1824" height="28" rx="5" fill="#14866d"/>
+<text x="1272" y="296" font-size="14px" font-weight="600" fill="#20252b" text-anchor="end">1814.69 km</text>
+<text x="1272" y="380" font-size="14px" font-weight="600" fill="#20252b" text-anchor="end">13.1481 km</text>
+<text x="35" y="555" font-size="12px" font-weight="400" fill="#45515e" text-anchor="start">Local: 36-hour merged Earth/Moon refinement. Annual: 2029-01-01 → 2030-01-01, merged inputs.</text>
+<text x="35" y="578" font-size="12px" font-weight="400" fill="#45515e" text-anchor="start">Source: EARTH_J2_PILOT6_REPORT.md. Separate bars are not uncertainty intervals; no synthetic trajectory is plotted.</text>
+</svg>

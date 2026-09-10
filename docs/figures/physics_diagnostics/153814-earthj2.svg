@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1000 470" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" role="img" aria-labelledby="title-153814 desc-153814">
+<title id="title-153814">153814 Earth J2 annual maximum position error</title>
+<desc id="desc-153814">Log-scale comparison of baseline and Earth J2 maximum position errors from the annual post-hoc audit.</desc>
+<rect width="100%" height="100%" fill="#fbfcfd"/>
+<text x="35" y="42" font-size="24px" font-weight="700" fill="#20252b" text-anchor="start">153814 (2001 WN5): Earth J2 audit</text>
+<text x="35" y="70" font-size="14px" font-weight="400" fill="#45515e" text-anchor="start">annual window 2028-05-27 → 2029-05-27; 365 days</text>
+<text x="35" y="98" font-size="13px" font-weight="400" fill="#45515e" text-anchor="start">JPL Horizons model-derived teacher; values are audit summaries, not error bars</text>
+<rect x="35" y="122" width="930" height="55" rx="8" fill="#eef5f2" stroke="#b8d8cd"/>
+<text x="55" y="146" font-size="14px" font-weight="700" fill="#176a57" text-anchor="start">Separate step check</text>
+<text x="205" y="146" font-size="15px" font-weight="600" fill="#20252b" text-anchor="start">production → fine shift: 0.830 m</text>
+<text x="205" y="168" font-size="12px" font-weight="400" fill="#45515e" text-anchor="start">This is reported as a sensitivity value, not an uncertainty bar on either error.</text>
+<line x1="285" x2="875" y1="350" y2="350" stroke="#45515e" stroke-width="1.5"/>
+<line x1="285" x2="285" y1="145" y2="350" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="285" x2="285" y1="350" y2="356" stroke="#45515e" stroke-width="1.5"/>
+<text x="285" y="378" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">0.01</text>
+<line x1="432.5" x2="432.5" y1="145" y2="350" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="432.5" x2="432.5" y1="350" y2="356" stroke="#45515e" stroke-width="1.5"/>
+<text x="432.5" y="378" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">0.1</text>
+<line x1="580" x2="580" y1="145" y2="350" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="580" x2="580" y1="350" y2="356" stroke="#45515e" stroke-width="1.5"/>
+<text x="580" y="378" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">1</text>
+<line x1="727.5" x2="727.5" y1="145" y2="350" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="727.5" x2="727.5" y1="350" y2="356" stroke="#45515e" stroke-width="1.5"/>
+<text x="727.5" y="378" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">10</text>
+<line x1="875" x2="875" y1="145" y2="350" stroke="#dfe4e8" stroke-width="1"/>
+<line x1="875" x2="875" y1="350" y2="356" stroke="#45515e" stroke-width="1.5"/>
+<text x="875" y="378" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">100</text>
+<text x="580" y="403" font-size="13px" font-weight="400" fill="#45515e" text-anchor="middle">max position error (km), logarithmic scale</text>
+<text x="55" y="206" font-size="15px" font-weight="600" fill="#637083" text-anchor="start">baseline</text>
+<rect x="285" y="186" width="461.5" height="28" rx="5" fill="#637083"/>
+<text x="965" y="207" font-size="15px" font-weight="600" fill="#20252b" text-anchor="end">13.452789212 km</text>
+<text x="55" y="278" font-size="15px" font-weight="600" fill="#14866d" text-anchor="start">EarthJ2</text>
+<rect x="285" y="258" width="70.0614" height="28" rx="5" fill="#14866d"/>
+<text x="965" y="279" font-size="15px" font-weight="600" fill="#20252b" text-anchor="end">0.029853293 km</text>
+<text x="35" y="445" font-size="12px" font-weight="400" fill="#45515e" text-anchor="start">Source: DEVELOPMENT30_OUTLIER_AUDIT_REPORT.md; annual reference daily + refined grid.</text>
+</svg>

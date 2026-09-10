@@ -1,0 +1,89 @@
+{
+  "provenance": {
+    "reference": "JPL Horizons model-derived teacher",
+    "units": "maximum position error, km",
+    "scope": "post-hoc physics audit; production/fine is a separate step-sensitivity value"
+  },
+  "panels": {
+    "153814_earth_j2": {
+      "title": "153814 (2001 WN5): Earth J2 audit",
+      "window": "annual window 2028-05-27 → 2029-05-27; 365 days",
+      "source_report": "DEVELOPMENT30_OUTLIER_AUDIT_REPORT.md",
+      "values": [
+        {
+          "label": "baseline",
+          "value_km": 13.452789212,
+          "display": "13.452789212",
+          "color": "#637083"
+        },
+        {
+          "label": "EarthJ2",
+          "value_km": 0.029853293,
+          "display": "0.029853293",
+          "color": "#14866d"
+        }
+      ],
+      "step_sensitivity_m": 0.83
+    },
+    "apophis_j2_ng": {
+      "title": "Апофис: J2 и nominal-NG ветви",
+      "source_report": "EARTH_J2_PILOT6_REPORT.md",
+      "groups": [
+        {
+          "title": "local 36 h",
+          "subtitle": "merged; no-NG → J2 IAU",
+          "values": [
+            {
+              "label": "no-NG",
+              "value_km": 3.65057,
+              "display": "3.65057",
+              "color": "#637083"
+            },
+            {
+              "label": "+ J2 IAU",
+              "value_km": 0.00184481,
+              "display": "0.00184481",
+              "color": "#14866d"
+            }
+          ]
+        },
+        {
+          "title": "annual, no-NG",
+          "subtitle": "merged; no J2 → J2 IAU",
+          "values": [
+            {
+              "label": "no J2",
+              "value_km": 359.482,
+              "display": "359.482",
+              "color": "#637083"
+            },
+            {
+              "label": "+ J2 IAU",
+              "value_km": 1701.89,
+              "display": "1701.89",
+              "color": "#b45538"
+            }
+          ]
+        },
+        {
+          "title": "annual, nominal-NG",
+          "subtitle": "merged; no J2 → J2 IAU",
+          "values": [
+            {
+              "label": "no J2",
+              "value_km": 1814.69,
+              "display": "1814.69",
+              "color": "#637083"
+            },
+            {
+              "label": "+ J2 IAU",
+              "value_km": 13.1481,
+              "display": "13.1481",
+              "color": "#14866d"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
